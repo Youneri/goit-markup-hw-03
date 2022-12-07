@@ -8,7 +8,6 @@ html{
     box-sizing: inherit;
 }
 
-
 :root{
     --iris: #4D5AE5;
     --nuvy-blue: #2E2F42;
@@ -16,12 +15,20 @@ html{
     --cornflower: #E7E9FC;
     --cloud: #F4F4FD;
     --white: #FFFFFF;
+    --active-btn: #404BBF;
 }
 
 body{
     font-family: Roboto, sans-serif;
     background-color: var(--white);
     color: var(--slate);
+}
+
+.container{
+    width: 1158px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin: 0 auto;
 }
 
 .section{
@@ -50,6 +57,8 @@ body{
 }
 .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -78,13 +87,44 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.hero {
+    background-color: var(--nuvy-blue);
+    text-align: center;
+}
+
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 48 px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: var(--white);
+}
+
+.hero-btn{
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.04em;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    background: var(--iris);   
+}
+
+.hero-btn:hover,
+.hero-btn:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.hero-btn:active{
+    background: var(--active-btn);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .visually-hidden {
@@ -129,16 +169,21 @@ body{
     color: var(--iris);
 }
 
-.hero{
-    background-color: var(--nuvy-blue);
-}
-
 
 .category-title{
     color: var(--white);
 }
 
+.category-list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
 .category-btn{
+    padding: 8px 16px;
     color: var(--iris);
     background: var(--cloud);
     border: 1px solid var(--cornflower);
@@ -158,7 +203,10 @@ body{
     border: 1px solid var(--iris);
 }
 .content-item{
+    background: var(--white);
 
+    border: 0.5px solid var(--cloud);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .team{
@@ -185,6 +233,8 @@ body{
 }
 
 .type-thirst{
+    margin-top: 0;
+    margin-bottom: 8px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -193,9 +243,20 @@ body{
 }
 
 .text{
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
 }
 
+.header{
+
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.menu-list{
+    display: flex;
+
+}
