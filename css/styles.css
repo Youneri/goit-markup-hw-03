@@ -31,6 +31,21 @@ body{
     margin: 0 auto;
 }
 
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-block{
+    display: flex;
+    align-items: center;
+}
+
+.main-naw{
+    display: flex;
+    align-items: center;
+}
 .section{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -42,6 +57,7 @@ body{
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
+    margin-right: 77px;
 }
 .header-logo-first{
     color: var(--iris);
@@ -55,10 +71,65 @@ body{
 .footer-logo-second{
     color: var(--cloud);
 }
-.list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+.menu-list {
+    display: flex;
+}
+
+.menu-list .item {
+    margin-right: 40px;
+}
+
+.menu-list .item:last-child {
+    margin-right: 0;
+}
+
+.menu-item {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--nuvy-blue);
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    color: var(--slate);
+}
+
+.menu-item:active {
+    color: var(--iris);
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item {
+    margin-right: 36px;
+}
+
+.contacts .item:last-child {
+    margin-right: 0;
+}
+
+.contacts-item {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+    color: var(--iris);
 }
 
 .link {
@@ -139,36 +210,6 @@ body{
     clip-path: inset(50%);
     margin: -1px;
 }
-
-.menu-item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--nuvy-blue);
-}
-
-.menu-item:hover,
-.menu-item:focus {
-    color: var(--slate);
-}
-
-.menu-item:active {
-    color: var(--iris);
-}
-
-.contacts-item{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-}
-
-.contacts-item:hover,
-.contacts-item:focus{
-    color: var(--iris);
-}
-
 
 .category-title{
     color: var(--white);
@@ -295,9 +336,4 @@ body{
 .header{
 
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.menu-list{
-    display: flex;
-
 }
