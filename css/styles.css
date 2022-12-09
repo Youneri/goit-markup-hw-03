@@ -26,15 +26,27 @@ body{
 
 .container{
     width: 1158px;
-    padding-left: 156px;
-    padding-right: 156px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .list {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+/*Header*/
+.header {
+
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-block{
@@ -256,6 +268,10 @@ body{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.features{
+    padding-bottom: 0;
+}
+
 .features-list{
     display: flex;
     align-items: flex-start;
@@ -300,8 +316,15 @@ body{
 .footer{
     background-color: var(--nuvy-blue);
 }
+
+.footer-main{
+    padding-top: 100px;
+    padding-bottom: 100px;   
+}
+
 .footer-dis{
     color: var(--cornflower);
+    width: 264px;
 }
 
 .type-second {
@@ -324,16 +347,4 @@ body{
     color: var(--nuvy-blue);
 }
 
-.text{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate);
-}
 
-.header{
-
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
